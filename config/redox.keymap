@@ -34,7 +34,7 @@
 #define BT_3 BT_SEL 3
 #define BT_4 BT_SEL 4
 #define OT OUT_TOG
-#define &boot &bootloader
+#define BOOT &bootloader
 #define LOCK K_LOCK
 
 / {
@@ -96,7 +96,7 @@
 //┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐                                            ┌─────────┬─────────┬─────────┬─────────┬─────────┬─────────┐
    &bt BT_C  &bt BT_0  &bt BT_1  &bt BT_2  &bt BT_3  &bt BT_4                                               &none     &none     &none     &none     &none     &none     
 //├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐                        ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
-   &trans    &none     &none     &none     &none     &none     &boot                              &none     &none     &none     &none     &none     &none     &none    
+   &trans    &none     &none     &none     &none     &none     BOOT                               &none     &none     &none     &none     &none     &none     &none    
 //├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤                        ├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
    &trans    &none     &none     &none     &none     &none     &sys_reset                         &trans    &none     &none     &none     &none     &none     &none    
 //├─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┐    ┌─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┼─────────┤
